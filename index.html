@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Kecepatan Informasi: Dari Gua ke Gigabyte | E-book Eksklusif</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007bff; /* Biru */
+            --secondary-color: #28a745; /* Hijau WhatsApp */
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --dark-bg: #343a40;
+            --white: #fff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, rgba(0, 123, 255, 0.8), rgba(40, 167, 69, 0.8)), url('https://source.unsplash.com/1600x900/?technology,history') no-repeat center center/cover; /* Gambar latar belakang dinamis */
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- STYLING BUTTON UMUM (.cta-button) --- */
+        .cta-button {
+            background-color: var(--secondary-color); /* Hijau WhatsApp */
+            color: var(--white);
+            
+            /* PENGATURAN BOX DAN TEKS */
+            padding: 15px 35px; /* Memberi jarak dalam kotak (Kotak Tombol) */
+            text-decoration: none;
+            font-size: 1.4em;
+            font-weight: 600;
+            border-radius: 50px; /* Sudut membulat */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+            /* PENGATURAN FLEX UNTUK IKON DAN TEKS AGAR SEJAJAR DAN DI TENGAH */
+            display: inline-flex;
+            align-items: center; /* Rata tengah vertikal */
+            gap: 10px; /* Jarak antara ikon dan teks */
+        }
+
+        .cta-button:hover {
+            background-color: #218838; /* Hijau lebih gelap */
+            transform: translateY(-3px);
+        }
+        
+        /* Sections General */
+        section {
+            padding: 40px 0;
+            margin-bottom: 20px;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        section p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        ul li {
+            background: var(--light-bg);
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 5px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 1.05em;
+        }
+
+        /* E-book Cover Image */
+        .ebook-cover {
+            margin: 30px auto;
+            max-width: 300px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .ebook-cover img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Testimonial Section */
+        .testimonials {
+            background-color: var(--light-bg);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            text-align: left;
+        }
+        .testimonial-card p {
+            font-style: italic;
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .testimonial-card .author {
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 1em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--white);
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 50px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            .cta-button {
+                font-size: 1.1em;
+                padding: 12px 25px;
+            }
+            section h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <div class="container">
+           <a href="#" class="logo">Informasi Cepat</a>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Sejarah Kecepatan Informasi</h1>
+            <p>Dari Gua ke Gigabyte: E-book Eksklusif yang Menguak Evolusi Komunikasi Manusia!</p>
+            <a href="https://wa.me/628156038855?text=Halo,%20saya%20tertarik%20dengan%20e-book%20%22Sejarah%20Kecepatan%20Informasi%22.%20Bagaimana%20cara%20mendapatkannya%3F" target="_blank" class="cta-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.233 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.923 3.574 1.442 5.564 1.443 5.238 0 9.518-4.28 9.519-9.518-.001-5.239-4.28-9.52-9.519-9.52-5.237 0-9.518 4.28-9.518 9.52 0 1.747.501 3.462 1.457 4.93l-.957 3.498 3.548-.928zm8.076-4.113c-.08-.041-.219-.08-.31-.123-.196-.096-.459-.159-.75-.159-.272 0-.547.051-.798.157-.25.105-.487.277-.692.484-.207.208-.378.471-.482.723-.104.252-.158.528-.158.805 0 .276.054.552.158.804.104.252.276.491.483.695.206.205.444.377.696.481.252.104.527.158.804.158.276 0 .552-.054.804-.158.252-.104.491-.276.695-.483.205-.206.377-.444.482-.696.104-.252.158-.527.158-.804 0-.276-.054-.552-.158-.804-.041-.08-.08-.219-.123-.31-.096-.196-.159-.459-.159-.75 0-.272.051-.547.157-.798.105-.25.277-.487.484-.692.208-.207.471-.378.723-.482.252-.104.528-.158.805-.158.276 0 .552-.054.804-.158.252-.104.491-.276.695-.483.205-.206.377-.444.482-.696.104-.252.158-.527.158-.804 0-.276-.054-.552-.158-.804z"/></svg>
+                Dapatkan E-book Sekarang via WhatsApp!
+            </a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section id="about">
+            <h2>Tentang E-book Ini</h2>
+            <div class="ebook-cover">
+                <img src="/Penyimpanan internal/06. Outlet NAMINA/Cover-KKI2.jpg" alt="Sampul E-book Sejarah Kecepatan Informasi"> 
+            </div>
+            <p>E-book "Sejarah Kecepatan Informasi: Dari Gua ke Gigabyte" akan membawa Anda dalam perjalanan melintasi waktu, menyingkap bagaimana manusia terus berinovasi untuk mengirimkan dan menerima informasi dengan lebih cepat. Dari isyarat asap kuno hingga internet berkecepatan cahaya, setiap bab adalah penjelajahan mendalam tentang penemuan dan dampaknya pada peradaban manusia.</p>
+        </section>
+
+        <section id="benefits">
+            <h2>Mengapa Anda Perlu Membaca Ini?</h2>
+            <p>Dapatkan pemahaman mendalam yang akan mengubah cara Anda melihat dunia digital saat ini.</p>
+            <ul>
+                <li>⏳  Memahami akar revolusi digital dan bagaimana kita sampai pada era informasi ini.</li>
+                <li>🐦  Mengenali tokoh-tokoh kunci dan penemuan-penemuan yang mengubah dunia komunikasi.</li>
+                <li>💡 Melihat pola sejarah untuk memprediksi masa depan teknologi informasi.</li>
+                <li>Menghargai kecepatan dan kemudahan akses informasi yang kita nikmati saat ini.</li>
+                <li>Sumber wawasan berharga untuk pelajar, profesional, dan siapa saja yang tertarik dengan sejarah teknologi.</li>
+            </ul>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>Apa Kata Pembaca?</h2>
+            <div class="testimonial-card">
+                <p>"E-book ini luar biasa! Membuka wawasan saya tentang bagaimana komunikasi berkembang. Sangat direkomendasikan untuk pecinta sejarah dan teknologi!"</p>
+                <div class="author">- Budi Santoso, Dosen Sejarah</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Penjelasan yang mendalam namun mudah dipahami. Saya tidak pernah menyadari betapa panjangnya perjalanan informasi ini."</p>
+                <div class="author">- Siti Aisyah, Mahasiswa Ilmu Komunikasi</div>
+            </div>
+        </section>
+
+        <section id="cta-bottom">
+            <h2>Jangan Lewatkan Kesempatan Ini!</h2>
+            <p>Dapatkan E-book "Sejarah Kecepatan Informasi" sekarang dan mulailah perjalanan Anda menelusuri waktu.</p>
+            <a 
+                href="https://wa.me/628156038855?text=Halo,%20saya%20tertarik%20dengan%20e-book%20%22Sejarah%20Kecepatan%20Informasi%22.%20Bagaimana%20cara%20mendapatkannya%3F" 
+                target="_blank" 
+                class="cta-button"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.233 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.923 3.574 1.442 5.564 1.443 5.238 0 9.518-4.28 9.519-9.518-.001-5.239-4.28-9.52-9.519-9.52-5.237 0-9.518 4.28-9.518 9.52 0 1.747.501 3.462 1.457 4.93l-.957 3.498 3.548-.928zm8.076-4.113c-.08-.041-.219-.08-.31-.123-.196-.096-.459-.159-.75-.159-.272 0-.547.051-.798.157-.25.105-.487.277-.692.484-.207.208-.378.471-.482.723-.104.252-.158.528-.158.805 0 .276.054.552.158.804.104.252.276.491.483.695.206.205.444.377.696.481.252.104.527.158.804.158.276 0 .552-.054.804-.158.252-.104.491-.276.695-.483.205-.206.377-.444.482-.696.104-.252.158-.527.158-.804 0-.276-.054-.552-.158-.804-.041-.08-.08-.219-.123-.31-.096-.196-.159-.459-.159-.75 0-.272.051-.547.157-.798.105-.25.277-.487.484-.692.208-.207.471-.378.723-.482.252-.104.528-.158.805-.158.276 0 .552-.054.804-.158.252-.104.491-.276.695-.483.205-.206.377-.444.482-.696.104-.252.158-.527.158-.804 0-.276-.054-.552-.158-.804z"/></svg>
+                Saya Mau E-book Ini!
+            </a>
+
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sejarah Kecepatan Informasi. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
